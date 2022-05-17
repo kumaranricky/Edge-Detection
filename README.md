@@ -44,14 +44,18 @@ cv2.imshow("Original image",img)
 cv2.imshow("Gray image",g_img)
 cv2.waitKey(0)
 cv2.destroAllWindows()
+img1=cv2.GaussianBlur(g_img,(3,3),0)
+cv2.imshow("Gaussian Blur",img1)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 # SOBEL EDGE DETECTOR
-sobelx = cv2.Sobel(g_img,cv2.CV_64F,1,0,ksize=5)
-sobely = cv2.Sobel(g_img,cv2.CV_64F,0,1,ksize=5)
-sobelxy =cv2.Sobel(g_img,cv2.CV_64F,1,1,ksize=5)
+sobelx = cv2.Sobel(img1,cv2.CV_64F,1,0,ksize=5)
+sobely = cv2.Sobel(img1,cv2.CV_64F,0,1,ksize=5)
+sobelxy =cv2.Sobel(img1,cv2.CV_64F,1,1,ksize=5)
 plt.figure(1)
 plt.subplot(2,2,1)
-plt.imshow(g_img)
+plt.imshow(img1)
 plt.title('Original'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(2,2,2)
@@ -71,13 +75,13 @@ plt.xticks([]), plt.yticks([])
 plt.show()
 
 # LAPLACIAN EDGE DETECTOR
-lap=cv2.Laplacian(g_img,cv2.CV_64F)
+lap=cv2.Laplacian(img1,cv2.CV_64F)
 cv2.imshow("Laplacian edge detector",lap)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # CANNY EDGE DETECTOR
-canny = cv2.Canny(g_img, 70, 150)
+canny = cv2.Canny(img1, 70, 150)
 cv2.imshow("Canny edge detector",canny)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
