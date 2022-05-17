@@ -8,10 +8,8 @@ Anaconda - Python 3.7
 ## Algorithm:
 ### Step1:
 Import the necessary modules.
-
 ### Step2:
 For performing edge detection on a image.
-
 Sobel
 ```
 sobelx=cv2.Sobel(img,cv2.CV_64F,1,0,5)
@@ -24,7 +22,6 @@ Laplacian=cv2.Laplacian(img,cv2.CV_64F)
 Canny
 canny=cv2.Canny(img,120,150)
 ```
-
 ### Step3:
 Display all the images with their respective edge detected images.
  
@@ -85,27 +82,17 @@ canny = cv2.Canny(img1, 70, 150)
 cv2.imshow("Canny edge detector",canny)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
-
 ```
-## Output:
 
+## Output:
 ### SOBEL EDGE DETECTOR
 ![Screenshot (178)](https://user-images.githubusercontent.com/75243072/168837480-50595ed0-5002-435f-8e8c-63fcba1d4b49.png)
-
-
 
 ### LAPLACIAN EDGE DETECTOR
 ![Screenshot (176)](https://user-images.githubusercontent.com/75243072/168837569-3cd646d0-68e5-4897-af19-dd8d81597512.png)
 
-
-
-
 ### CANNY EDGE DETECTOR
 ![Screenshot (177)](https://user-images.githubusercontent.com/75243072/168837538-f94bac31-ac18-48dc-8cc3-b8b272818567.png)
-
-
 
 ## Result:
 Thus the edges are detected using Sobel, Laplacian, and Canny edge detectors.
