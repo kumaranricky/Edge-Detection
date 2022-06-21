@@ -73,14 +73,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-## Output:
-### SOBEL EDGE DETECTOR
+## <br><br><br><br><br><br><br><br>Output:
+### <br><br><br><br>SOBEL EDGE DETECTOR
 ![Screenshot (175)](https://user-images.githubusercontent.com/75243072/173771860-3d3527f2-750b-460c-a844-b00c3e9e8351.png)
 
-### LAPLACIAN EDGE DETECTOR
+### <br><br><br><br>LAPLACIAN EDGE DETECTOR
 ![Screenshot (176)](https://user-images.githubusercontent.com/75243072/173771944-66dbfdf0-01ab-46ad-9097-05aaac5c1006.png)
 
-### CANNY EDGE DETECTOR
+### <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>CANNY EDGE DETECTOR
 ![Screenshot (177)](https://user-images.githubusercontent.com/75243072/173772157-9a474982-f2ab-41ef-8025-a2e7c0fe8321.png)
 
 
